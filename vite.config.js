@@ -14,6 +14,8 @@ export default defineConfig({
     }
   },
   build: {
-    // build options go here
+    rollupOptions: {
+      external: ['/src/main.js'] // Add the '/src/main.js' module here
+    }
   }
 })
